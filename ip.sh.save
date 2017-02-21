@@ -1,0 +1,6 @@
+#!/bin/bash
+ip=`ifconfig | grep "inet adr" | awk -F ":" '{print $2}' | awk -F  " " '{p$rint2}'`
+up=`ifconfig | grep "Přijato bajtů" | awk -F ":" '{printf $2}' | awk -F " " '{printf $2}'
+cas=`date +"%Y:%H:%M:%S"`
+echo "Moje ip je: " $ip
+echo "Cas je: " $cas
